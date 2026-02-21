@@ -2,80 +2,187 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Sai Srikar | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 18px;
+            opacity: 0.8;
+        }
+
+        nav {
+            text-align: center;
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        section {
+            padding: 60px 10%;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.1);
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 20px;
+            backdrop-filter: blur(15px);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ffd700;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0,0,0,0.3);
+            margin-top: 40px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            background: #ffd700;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: white;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 40px 5%;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <h1>Sai Srikar</h1>
-        <p>Computer Science Student | Developer | Tech Enthusiast</p>
-        <hr>
-    </header>
+<header>
+    <h1>Sai Srikar</h1>
+    <p>Computer Science Student | Developer | Tech Enthusiast</p>
+</header>
 
-    <!-- About Section -->
-    <section>
-        <h2>About Me</h2>
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
         <p>
-            I am a passionate Computer Science student interested in networking,
-            cloud computing, and software development. I enjoy building projects
-            and learning new technologies.
+            I am passionate about Computer Networks, Cloud Computing, Java Development,
+            and building real-world technical projects.
         </p>
-    </section>
+    </div>
+</section>
 
-    <!-- Skills Section -->
-    <section>
-        <h2>Skills</h2>
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="card">
         <ul>
-            <li>Java</li>
-            <li>MySQL</li>
-            <li>HTML</li>
-            <li>CloudSim</li>
-            <li>Computer Networks</li>
+            <li>✔ Java</li>
+            <li>✔ MySQL</li>
+            <li>✔ HTML & CSS</li>
+            <li>✔ CloudSim</li>
+            <li>✔ Computer Networks</li>
         </ul>
-    </section>
+    </div>
+</section>
 
-    <!-- Projects Section -->
-    <section>
-        <h2>Projects</h2>
+<section id="projects">
+    <h2>Projects</h2>
 
-        <article>
-            <h3>Cloud-Based Video Streaming Simulation</h3>
-            <p>
-                Simulated cloud infrastructure using CloudSim to analyze
-                resource allocation and streaming performance.
-            </p>
-        </article>
+    <div class="card">
+        <h3>Cloud Video Streaming Simulation</h3>
+        <p>Simulated cloud infrastructure using CloudSim for analyzing performance.</p>
+    </div>
 
-        <article>
-            <h3>Smart Safety Monitoring System</h3>
-            <p>
-                Designed a safety logic system using CAN protocol for
-                real-time monitoring and alerts.
-            </p>
-        </article>
+    <div class="card">
+        <h3>Smart Safety Monitoring System</h3>
+        <p>Developed CAN-based safety logic monitoring system.</p>
+    </div>
+</section>
 
-    </section>
-
-    <!-- Education Section -->
-    <section>
-        <h2>Education</h2>
-        <p>B.Tech in Computer Science Engineering</p>
-    </section>
-
-    <!-- Contact Section -->
-    <section>
-        <h2>Contact</h2>
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
         <p>Email: your-email@example.com</p>
         <p>Phone: +91-XXXXXXXXXX</p>
-    </section>
+        <br>
+        <button>Download Resume</button>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <hr>
-        <p>&copy; 2026 Sai Srikar. All rights reserved.</p>
-    </footer>
+<footer>
+    <p>© 2026 Sai Srikar | All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
