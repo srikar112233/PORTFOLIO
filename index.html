@@ -1,410 +1,81 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mahesh Babu | Superstar Portfolio</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: 'Segoe UI', sans-serif;
-}
-
-body{
-    background:#0f0f0f;
-    color:#fff;
-    line-height:1.6;
-}
-
-/* HEADER */
-header{
-    background:#000;
-    padding:20px;
-    text-align:center;
-}
-
-header h1{
-    color:#f5c518;
-    font-size:40px;
-}
-
-nav{
-    margin-top:10px;
-}
-
-nav a{
-    color:#fff;
-    text-decoration:none;
-    margin:0 15px;
-    font-weight:bold;
-}
-
-nav a:hover{
-    color:#f5c518;
-}
-
-/* HERO SECTION */
-.hero{
-    height:90vh;
-    background:url('https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91') no-repeat center center/cover;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:20px;
-}
-
-.hero-content{
-    background:rgba(0,0,0,0.7);
-    padding:40px;
-    border-radius:10px;
-}
-
-.hero h2{
-    font-size:38px;
-    color:#f5c518;
-}
-
-.hero p{
-    font-size:20px;
-    margin-top:15px;
-}
-
-/* ABOUT */
-.about{
-    padding:60px 10%;
-    background:#1a1a1a;
-}
-
-.about h2{
-    color:#f5c518;
-    margin-bottom:20px;
-}
-
-/* MOVIES */
-.movies{
-    padding:60px 10%;
-}
-
-.movies h2{
-    text-align:center;
-    margin-bottom:40px;
-    color:#f5c518;
-}
-
-.movie-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-}
-
-.movie-card{
-    background:#1a1a1a;
-    border-radius:10px;
-    overflow:hidden;
-    transition:0.4s;
-}
-
-.movie-card img{
-    width:100%;
-    height:350px;
-    object-fit:cover;
-}
-
-.movie-card:hover{
-    transform:scale(1.05);
-}
-
-.movie-card h3{
-    padding:15px;
-    text-align:center;
-    color:#f5c518;
-}
-
-/* FAN BANNER */
-.fans{
-    padding:60px 10%;
-    background:#111;
-    text-align:center;
-}
-
-.fans h2{
-    color:#f5c518;
-    margin-bottom:30px;
-}
-
-.banner{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
-
-.banner img{
-    width:100%;
-    border-radius:10px;
-    transition:0.4s;
-}
-
-.banner img:hover{
-    transform:scale(1.05);
-}
-
-/* CONTACT */
-.contact{
-    padding:60px 10%;
-    background:#1a1a1a;
-    text-align:center;
-}
-
-.contact h2{
-    color:#f5c518;
-    margin-bottom:20px;
-}
-
-/* FOOTER */
-footer{
-    background:#000;
-    text-align:center;
-    padding:20px;
-    color:#aaa;
-}
-
-@media(max-width:768px){
-    .hero h2{
-        font-size:28px;
-    }
-}
-</style>
-</head>
-
-<body>
-
-<header>
-    <h1>Mahesh Babu</h1>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#movies">Movies</a>
-        <a href="#fans">Fan Banners</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-
-<section class="hero" id="home">
-    <div class="hero-content">
-        <h2>Superstar of Telugu Cinema</h2>
-        <p>Style. Charisma. Power. Excellence.</p>
-    </div>
-</section>
-
-<section class="about" id="about">
-    <h2>About</h2>
-    <p>
-        Mahesh Babu is one of the most celebrated actors in Telugu cinema.
-        Known for his stylish screen presence and powerful performances,
-        he has delivered numerous blockbuster films and earned a massive fan following.
-    </p>
-</section>
-
-<section class="movies" id="movies">
-    <h2>Blockbuster Movies</h2>
-    <div class="movie-grid">
-        <div class="movie-card">
-            <img src="https://upload.wikimedia.org/wikipedia/en/5/5f/Pokiri_poster.jpg" alt="Pokiri">
-            <h3>Pokiri</h3>
-        </div>
-        <div class="movie-card">
-            <img src="https://upload.wikimedia.org/wikipedia/en/9/9d/Srimanthudu_poster.jpg" alt="Srimanthudu">
-            <h3>Srimanthudu</h3>
-        </div>
-        <div class="movie-card">
-            <img src="https://upload.wikimedia.org/wikipedia/en/1/13/Bharat_Ane_Nenu.jpg" alt="Bharat Ane Nenu">
-            <h3>Bharat Ane Nenu</h3>
-        </div>
-        <div class="movie-card">
-            <img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Businessman_film_poster.jpg" alt="Businessman">
-            <h3>Businessman</h3>
-        </div>
-    </div>
-</section>
-
-<section class="fans" id="fans">
-    <h2>Fan Celebration Banners</h2>
-    <div class="banner">
-        <img src="https://images.unsplash.com/photo-1520975922215-23041e0a3d5f" alt="Fan Banner 1">
-        <img src="https://images.unsplash.com/photo-1515169067865-5387ec356754" alt="Fan Banner 2">
-        <img src="https://images.unsplash.com/photo-1497032205916-ac775f0649ae" alt="Fan Banner 3">
-    </div>
-</section>
-
-<section class="contact" id="contact">
-    <h2>Contact</h2>
-    <p>Email: contact@maheshbabu.com</p>
-</section>
-
-<footer>
-    <p>© 2026 Mahesh Babu Fan Portfolio | Designed with ❤️</p>
-</footer>
-
-</body>
-</html> -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mahesh Babu | Superstar Portfolio</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body,html{
-    height:100%;
-    scroll-behavior:smooth;
-}
-
-/* HERO BACKGROUND */
-.hero{
-    height:100vh;
-    background: 
-    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
-    url('https://wallpapercave.com/wp/wp5236258.jpg') 
-    no-repeat center center/cover;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    color:#fff;
-}
-
-/* CONTENT BOX */
-.hero-content{
-    animation: fadeIn 2s ease-in-out;
-}
-
-.hero h1{
-    font-size:60px;
-    letter-spacing:3px;
-    color:#f5c518;
-    text-shadow:0 0 20px rgba(245,197,24,0.8);
-}
-
-.hero h2{
-    font-size:28px;
-    margin-top:20px;
-    font-weight:300;
-}
-
-.hero p{
-    margin-top:15px;
-    font-size:18px;
-    color:#ddd;
-}
-
-.btn{
-    display:inline-block;
-    margin-top:30px;
-    padding:12px 30px;
-    background:#f5c518;
-    color:#000;
-    text-decoration:none;
-    font-weight:bold;
-    border-radius:30px;
-    transition:0.4s;
-}
-
-.btn:hover{
-    background:#fff;
-    transform:scale(1.1);
-}
-
-/* ABOUT SECTION */
-.about{
-    background:#111;
-    color:#fff;
-    padding:80px 10%;
-    text-align:center;
-}
-
-.about h2{
-    font-size:36px;
-    color:#f5c518;
-    margin-bottom:20px;
-}
-
-.about p{
-    max-width:800px;
-    margin:auto;
-    font-size:18px;
-    line-height:1.8;
-}
-
-/* FOOTER */
-footer{
-    background:#000;
-    text-align:center;
-    padding:20px;
-    color:#aaa;
-}
-
-/* ANIMATION */
-@keyframes fadeIn{
-    from{
-        opacity:0;
-        transform:translateY(30px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
-/* RESPONSIVE */
-@media(max-width:768px){
-    .hero h1{
-        font-size:40px;
-    }
-    .hero h2{
-        font-size:20px;
-    }
-}
-</style>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 <body>
 
-<section class="hero">
-    <div class="hero-content">
-        <h1>Mahesh Babu</h1>
-        <h2>Superstar of Telugu Cinema</h2>
-        <p>Style • Power • Charisma • Excellence</p>
-        <a href="#about" class="btn">Explore</a>
-    </div>
-</section>
+    <!-- Header Section -->
+    <header>
+        <h1>Sai Srikar</h1>
+        <p>Computer Science Student | Developer | Tech Enthusiast</p>
+        <hr>
+    </header>
 
-<section class="about" id="about">
-    <h2>About Mahesh Babu</h2>
-    <p>
-        Mahesh Babu is one of the most influential and stylish actors in Telugu cinema.
-        Known for his charismatic screen presence and powerful performances,
-        he has delivered numerous blockbuster films and earned a massive global fan following.
-        His dedication, elegance, and versatility make him a true superstar.
-    </p>
-</section>
+    <!-- About Section -->
+    <section>
+        <h2>About Me</h2>
+        <p>
+            I am a passionate Computer Science student interested in networking,
+            cloud computing, and software development. I enjoy building projects
+            and learning new technologies.
+        </p>
+    </section>
 
-<footer>
-    © 2026 Mahesh Babu Fan Portfolio | Designed with ❤️
-</footer>
+    <!-- Skills Section -->
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li>Java</li>
+            <li>MySQL</li>
+            <li>HTML</li>
+            <li>CloudSim</li>
+            <li>Computer Networks</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section>
+        <h2>Projects</h2>
+
+        <article>
+            <h3>Cloud-Based Video Streaming Simulation</h3>
+            <p>
+                Simulated cloud infrastructure using CloudSim to analyze
+                resource allocation and streaming performance.
+            </p>
+        </article>
+
+        <article>
+            <h3>Smart Safety Monitoring System</h3>
+            <p>
+                Designed a safety logic system using CAN protocol for
+                real-time monitoring and alerts.
+            </p>
+        </article>
+
+    </section>
+
+    <!-- Education Section -->
+    <section>
+        <h2>Education</h2>
+        <p>B.Tech in Computer Science Engineering</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section>
+        <h2>Contact</h2>
+        <p>Email: your-email@example.com</p>
+        <p>Phone: +91-XXXXXXXXXX</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <hr>
+        <p>&copy; 2026 Sai Srikar. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
